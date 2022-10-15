@@ -1,4 +1,5 @@
 import Background from './bg.png';
+import Footer from './Footer'
 
 var sectionStyle = {
   width: "100%",
@@ -12,6 +13,7 @@ function App() {
       <div className="content" style={ sectionStyle }>
         <p>Hello _World</p>
       </div>
+      <Footer/>
     </div>
   );
 }
