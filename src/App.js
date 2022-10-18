@@ -1,16 +1,11 @@
-import Background from './bg.png';
+import Navbar from './Navbar';
 import Footer from './Footer'
-
-var sectionStyle = {
-  width: "100%",
-  height: "400px",
-  backgroundImage: "url(" + { Background } + ")"
-};
 
 function App() {
   return (
     <div className="App">
-      <div className="content" style={ sectionStyle }>
+      <Navbar/>
+      <div className="content">
         <p>Hello _World</p>
       </div>
       <Footer/>
