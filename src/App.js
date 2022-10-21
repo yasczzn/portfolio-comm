@@ -6,7 +6,9 @@ function App() {
     <div className="App">
       <Navbar/>
       <div className="content">
-        <p>Hello _World</p>
+        <div className="bubble">
+          <p>Hello _World</p>
+        </div>
       </div>
       <Footer/>
     </div>
