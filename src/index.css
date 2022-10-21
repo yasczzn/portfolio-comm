@@ -65,6 +65,7 @@ p {
 }
 .navbar h1 {
   color: #022e57;
+  text-transform: uppercase;
 }
 .navbar .links {
   margin-left: auto;
