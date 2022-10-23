@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
-import Footer from './Footer'
+import Footer from './Footer';
+import Home from './Home';
 
 function App() {
   return (
@@ -7,7 +8,9 @@ function App() {
       <Navbar/>
       <div className="content">
         <div className="bubble">
-          <p>Hello _World</p>
+          <h1>Welcome to my page</h1>
+          <p>What do you want to see?</p>
+          <Home/>
         </div>
       </div>
       <Footer/>

@@ -15,8 +15,7 @@ body, html {
   width: 100%;
   box-sizing: border-box;
 }
-p {
-  display: block;
+p, a, h1, h2, h3, h4, h5, h6 {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -34,17 +33,21 @@ p {
   height: 100%;
   padding: 5px;
 }
-.content p {
+.content p, .content h1 {
   margin: 10px;
+}
+.content h1 {
+  font-family: "Nanum Pen Script";
 }
 .content a {
   margin: 10px;
 }
 .bubble {
   margin: 0;
-  padding-top: calc(15rem + 55px);
+  padding-top: calc(13rem + 55px);
   padding-bottom: 15rem;
   position: relative;
+  text-align: center;
   background-image: url('bg.png');
   background-repeat: no-repeat;
   background-position: center center;
@@ -76,7 +79,9 @@ p {
   padding: 6px;
 }
 .navbar a:hover {
-  color: #005A8D;
+  background-color: #005A8D;
+  color: white;
+  border-radius: 8px;
 }
 .footer {
   padding: 20px;
