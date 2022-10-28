@@ -22,6 +22,12 @@ p, a, h1, h2, h3, h4, h5, h6 {
   margin-inline-end: 0px;
   background-color: transparent;
 }
+h1 {
+  font-size: 4em;
+}
+a {
+  text-decoration: none;
+}
 .root {
   height: inherit;
 }
@@ -29,9 +35,17 @@ p, a, h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 .content {
-  margin: 40px auto;
-  height: 100%;
-  padding: 5px;
+  margin: 0;
+  padding-top: calc(5rem + 55px);
+  padding-bottom: 15rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-image: url('bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
 }
 .content p, .content h1 {
   margin: 10px;
@@ -43,30 +57,22 @@ p, a, h1, h2, h3, h4, h5, h6 {
   margin: 10px;
 }
 .bubble {
-  margin: 0;
-  padding-top: calc(13rem + 55px);
-  padding-bottom: 15rem;
-  position: relative;
-  text-align: center;
-  background-image: url('bg.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: scroll;
-  background-size: cover;
+  margin: 40px auto;
+  padding: 5px;
 }
 .navbar {
-  padding: 20px 290px;
+  padding: 5px 290px;
   display: flex;
   align-items: center;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 10;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
-.navbar h1 {
+.navbar h2 {
   color: #022e57;
   text-transform: uppercase;
 }
@@ -75,7 +81,6 @@ p, a, h1, h2, h3, h4, h5, h6 {
 }
 .navbar a {
   margin-left: 16px;
-  text-decoration: none;
   padding: 6px;
 }
 .navbar a:hover {
@@ -97,4 +102,12 @@ p, a, h1, h2, h3, h4, h5, h6 {
   right: 0;
   height: 50px;
   width: 100%;
+}
+.home {
+  display: inline-block;
+}
+.home .blocks {
+  padding:10px;
+  box-sizing:border-box;
+  margin:10px;
 }

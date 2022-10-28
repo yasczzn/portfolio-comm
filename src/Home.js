@@ -1,10 +1,14 @@
 const Home = () => {
     return ( 
-        <div className="content">
-            <div className="menu">
-            <a href="/">Works </a>
-            <a href="/">Projects </a>
-            <a href="/">Commision info </a>
+        <div className="menu">
+            <div className="blocks">
+                <a href="/">Works </a>
+            </div>
+            <div className="blocks">
+                <a href="/">Projects </a>
+            </div>
+            <div className="blocks">
+                <a href="/">Commision info </a>
             </div>
         </div>
      );
