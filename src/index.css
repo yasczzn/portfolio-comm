@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Ruda:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lexend|Ruda:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --navy: #022e57;
+  --purple: #3D087B;
+  --pink: #F43B86;
+  --yellow: #FFE459;
+  --gray: #858796;
+  --gray-dark: #5a5c69;
+  --light: #FFF5FD;
+  --dark: #090317;
+}
 
 /* styles */
 * {
   margin: 0;
   font-family: "Ruda";
-  color: #022e57;
-  background: #FFF5FD;
+  color: whitesmoke;
 }
 body, html {
   margin:0;
@@ -13,6 +23,7 @@ body, html {
   line-height: 1.5em;
   height: 100%;
   width: 100%;
+  background: var(--dark);
   box-sizing: border-box;
 }
 p, a, h1, h2, h3, h4, h5, h6 {
@@ -23,45 +34,39 @@ p, a, h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
 }
 h1 {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 a {
   text-decoration: none;
 }
-.root {
-  height: inherit;
-}
-.app {
-  height: 100%;
-}
 .content {
-  margin: 0;
-  padding-top: calc(5rem + 55px);
-  padding-bottom: 15rem;
+  margin-top: 6em;
+  margin-bottom: 6em;
+  padding-top: calc(7rem + 55px);
+  padding-bottom: 15em;
   display: flex;
   justify-content: center;
   position: relative;
-  background-image: url('bg.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: scroll;
+  background-image: url(bg.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .content p, .content h1 {
   margin: 10px;
 }
 .content h1 {
-  font-family: "Nanum Pen Script";
+  font-family: "Lexend";
+  margin: 1em;
 }
 .content a {
   margin: 10px;
 }
 .bubble {
-  margin: 40px auto;
+  margin: auto;
   padding: 5px;
 }
 .navbar {
-  padding: 5px 290px;
+  padding: 0 9em;
   display: flex;
   align-items: center;
   position: fixed;
@@ -70,10 +75,10 @@ a {
   left: 0;
   z-index: 10;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px ridge hsla(0, 0%, 96%, 0.3);
 }
 .navbar h2 {
-  color: #022e57;
+  font-family: "Lexend";
   text-transform: uppercase;
 }
 .navbar .links {
@@ -84,9 +89,7 @@ a {
   padding: 6px;
 }
 .navbar a:hover {
-  background-color: #005A8D;
-  color: white;
-  border-radius: 8px;
+  color: var(--yellow);
 }
 .footer {
   padding: 20px;
@@ -95,8 +98,6 @@ a {
   align-items:center;
   margin: 0 auto;
   border-top: 1px solid #f2f2f2;
-  display:flex;
-  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -105,6 +106,7 @@ a {
 }
 .home {
   display: inline-block;
+  background-color: transparent;
 }
 .home .blocks {
   padding:10px;

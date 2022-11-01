@@ -1,5 +1,14 @@
+import { useState } from "react";
+
 const Home = () => {
-    return ( 
+
+    const [pics, setPic] = useState([
+        { title: 'Anyone', body: 'Your Choice', author: 'seventeen', id: 1},
+        { title: 'Tiger', body: 'Tiger', author: 'hoshi', id: 2},
+        { title: 'Good to Me', body: 'You Make My Dawn', author: 'seventeen', id: 3}
+    ]);
+
+    return (       
         <div className="menu">
             <div className="blocks">
                 <a href="/">Works </a>
